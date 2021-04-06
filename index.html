@@ -1,174 +1,64 @@
-
+<!-- PÀGINA D'INICI -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mila Palomeras</title>
-    <link href='https://fonts.googleapis.com/css?family=Almendra' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="icon.ico" />
-  </head>
-<style>
-div.gallery {
 
-margin-top: 10vh;
+<head>
+<!-- TÍTOL DE LA PÀGINA -->
+<title>Mila Palomeras</title>
 
 
+<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
 
-}
-
-
-div.gallery img {
-  width: 150%;
-  height: auto;
-
-  
-}
-
-div.desc {
-  font-size:20px;
-  padding: 15px;
-  text-align: center;
-}
+<script src="sketch.js"></script>
 
 
-div.nom {
-  position: fixed;
-    left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
-}
-  
-.nom img {
-  width: 80px;
-}
-
-* {
-  box-sizing: border-box;
-;
-}
-
-body {
-  cursor: url(cursor.cur), none;
-
- 
-  font-family: 'Almendra';
-  
-  background-image: url(assets/background.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-size: 100vw 100vh;
-height: 100%;
-text-align: center
-
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 29%;
-  font-size: 0px;
-  align-content: center;
-  text-align: center;
-
-}
-
-
-
-.responsive:hover {
-  font-size: 30px;
-}
-@media only screen and (max-width: 1024px) {
-  .responsive {
-    width: 65vw;
-    margin: auto;
-    
-  }
-
-  div.gallery {
- 
-margin-top: 0vh;
-
-}
-
-
-
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 63vw;
-    margin: auto;
-    height: autoS;
-    font-size: 20px;
-
-  }
-
-div.nom {
-  position: absolute;
-  margin-top: 600px;
-}
-  
-
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-      text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
-}
-</style>
+<link rel="stylesheet" href="estil.css">
 </head>
+<!--------------------------------------------------------->
+<!-- PÀGINA -->
 <body>
-  
 
-<div class="responsive">
-  <div class="gallery">
-    <a  href="drugstore.html"> 
-      <img src="assets/drugstore.jpg" alt="Drugstore Folklore" class="imageSpin" width="600" height="400">
-      SOLUCIONES TEMPORALES</a>
-    <div class="desc"></div>
-  </div>
+<!-- TÍTOL FIXE SUPERIOR-->
+<div class="navbar">
+
+<!-- href="aquí va l'enllaç allà on vulguis" (exemple: href="www.milaguapa.com")
+(en el cas de l'enllaç a enviar un correu afegir davant "mailto:")-->
+
+<a href="">Mila Palomeras</a>
+<a href="mailto:milapalomeras05@gmail.com">milapalomeras05@gmail.com</a>
+<a href="https://www.instagram.com/milacorpetit/">@milacorpetit</a>
+
 </div>
+<!--------------------------------------------------------->
+<!-- QUADRÍCULA D'IMATGES-->
+<main role="main">
+
+  <!--
+
+    <div class="item"><a href=""><img src="assets/image.jpg" alt="">Lorem ipsum dolor sit amet</a></div>
+
+  div= 1 item = IMATGE + TEXT
+  (a copiar segons convingui un sota l'altre)
+
+  href="aquí va l'enllaç a la subpagina html" (exemple: href="clo.html")
+
+  src="aquí va l'enllaç a la imatge" (exemple: src="assets/flor.png") (ALERTA AMB EL FORMAT)
+
+  >Lorem ipsum dolor sit amet < = >Títol del Treball <
+
+-->
+
+<div class="item"><a href="template.html"><img src="assets/image.jpg" alt="">Lorem ipsum dolor sit amet </a></div>
+<div class="item"><a href="template.html"><img src="assets/image.jpg" alt="">Lorem ipsum dolor sit amet</a></div>
+<div class="item"><a href="template.html"><img src="assets/image.jpg" alt="">Lorem ipsum dolor sit amet </a></div>
+<div class="item"><a href="escaner.html"><img src="assets/image_01.jpeg" alt="">Escaner</a></div>
+<div class="item"><a href="template.html"><img src="assets/image_02.jpeg" alt="">Escaner</a></div>
 
 
-<div class="responsive">
-  <div class="gallery">
-    <a  href="iaia.html">
-      <img src="assets/iaia.jpg" alt="" class="imageSpin" width="600" height="400">
-      ZERO WASTE</a>
-    <div class="desc"></div>
-  </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a  href="disfraz.html"> 
-      <img src="assets/disfraz.jpg" alt="" class="imageSpin" width="600" height="400">
-      CÓDIGO - FUNCIÓN</a>
-    <div class="desc"></div>
-  </div>
-</div>
-
-<div class="clearfix"></div>
-
-<div class="nom" >
-
-  <a href="contacte.html"><h2>Mila Palomeras</h2></a> 
-  <a href="contacte.html"><img src="assets/icon.gif" alt=""></a>
- 
-  
- </div>
-
+<!--------------------------------------------------------->
+</main>
+<div id="myContainer"> </div>
 
 
 </body>
